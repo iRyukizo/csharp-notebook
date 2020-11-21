@@ -13,6 +13,9 @@ RUN wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsof
     export PATH="$PATH:~/.dotnet/tools" &&                                                      \
     dotnet try jupyter install
 
-ENV PATH="${PATH}:/home/jovyan/.dotnet/tools"
+COPY script.py .script.py
 
-CMD jupyter notebook --no-browser --port=8888 --allow-root
+ENV PATH="${PATH}:/home/jovyan/.dotnet/tools"
+ENV JUP_PASSWD="12345"
+
+CMD jupyter notebook --no-browser --port=8888 --allow-root --NotebookApp.password=$(./.script.py)

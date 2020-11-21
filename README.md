@@ -13,3 +13,9 @@ If you want to use it, simply pull it from [dockerhub](https://hub.docker.com/r/
 ```sh
 docker pull ryukizo/csharp-notebook
 ```
+
+Default password is : `12345`.
+If you want to change it, run the images with:
+```sh
+docker run -it --env JUP_PASSWD="my_password" ryukizo/csharp-notebook
+```

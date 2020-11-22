@@ -13,6 +13,8 @@ RUN wget -q https://packages.microsoft.com/config/ubuntu/18.04/packages-microsof
     export PATH="$PATH:~/.dotnet/tools" &&                                                      \
     dotnet try jupyter install
 
+WORKDIR $HOME/work
+
 COPY script.py .script.py
 
 ENV PATH="${PATH}:/home/jovyan/.dotnet/tools"

@@ -1,4 +1,5 @@
-[![Docker build status](https://img.shields.io/docker/cloud/build/ryukizo/csharp-notebook?label=build&logo=docker&style=for-the-badge)](https://hub.docker.com/r/ryukizo/csharp-notebook/builds)
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/iRyukizo/csharp-notebook/Docker%20Images%20publication?label=build%20and%20push&logo=github&style=for-the-badge)](https://github.com/iRyukizo/csharp-notebook)
+[![Docker build status](https://img.shields.io/docker/cloud/build/ryukizo/csharp-notebook?color=%23006eb7&label=BUILD&logo=docker&style=for-the-badge)](https://hub.docker.com/r/ryukizo/csharp-notebook/builds)
 [![Docker pulls](https://img.shields.io/docker/pulls/ryukizo/csharp-notebook?logo=docker&style=for-the-badge&label=pulls)](https://hub.docker.com/r/ryukizo/csharp-notebook)
 
 # C# Notebook
